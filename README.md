@@ -1,7 +1,7 @@
 # ForumsDarkMode
 Dark mode user stylesheet for the RedFlagDeals forums. If you would prefer viewing the RedFlagDeals forums using a dark or night theme, you've come to the right place.
 
-[[https://github.com/rfdy/ForumsDarkMode/blob/master/darkmode_screenshot.png|alt=Screenshot of RedFlagDeals forums in dark mode]]
+![Screenshot of RedFlagDeals forums in dark mode](https://github.com/rfdy/ForumsDarkMode/blob/master/darkmode_screenshot.png)
 
 ## Installation
 The easiest way to get setup is to use the [Stylish extension](https://userstyles.org/) with your browser of choice. Once you've installed Stylish, you can [install the dark mode stylesheet from userstyles.org directly](https://userstyles.org/styles/132648/redflagdeals-com-forums-dark-mode). You can also use the Stylish file in this repository.
