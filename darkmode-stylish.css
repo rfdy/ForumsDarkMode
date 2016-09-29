@@ -216,6 +216,10 @@
     border-color: #222;
   }
 
+  #site_search {
+    background-color: #333;
+  }
+
   #site_search input {
     background-color: #222;
     border-color: #4d4d4d;

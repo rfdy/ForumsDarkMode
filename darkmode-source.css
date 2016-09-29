@@ -16,7 +16,7 @@ SITE HEADER
 .site_logo_text,
 .site_logo_tagline {
   -webkit-filter: brightness(1.25);
-          filter: brightness(1.25);
+  filter: brightness(1.25);
 }
 
 #site_userbox {
@@ -212,6 +212,10 @@ SITE MAINNAV
 #submenu_news li {
   background-color: #333;
   border-color: #222;
+}
+
+#site_search {
+  background-color: #333;
 }
 
 #site_search input {
