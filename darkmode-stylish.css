@@ -1,5 +1,5 @@
 @namespace url(http://www.w3.org/1999/xhtml);
-@-moz-document regexp("http://(\\w+\\.)?forums\\.redflagdeals\\.com/(?!mcp.php)(?!adm).*") {
+@-moz-document regexp("https?://(\\w+\\.)?forums\\.redflagdeals\\.com/(?!mcp.php)(?!adm).*") {
   /**
    * REDFLAGDEALS.COM RESPONSIVE FORUMS - dark mode stylesheet (17.1.0 / September 2016)
    */
