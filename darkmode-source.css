@@ -1,5 +1,5 @@
 /**
- * REDFLAGDEALS.COM RESPONSIVE FORUMS - dark mode stylesheet (17.1.0 / September 2016)
+ * REDFLAGDEALS.COM RESPONSIVE FORUMS - dark mode stylesheet (20.0.0 / February 2017)
  */
 /*
 =====
@@ -835,6 +835,51 @@ VIEW TOPIC
 
 .thread_endmatter {
   border-color: #4d4d4d;
+}
+
+/*
+=====
+THREAD VOTING
+=====
+*/
+.total_count_selector {
+  color: #aaa;
+}
+
+.thread_header .dropdown {
+  background-color: #333;
+  border-color: #4d4d4d;
+  color: #eee;
+}
+
+.thread_header .dropdown:before {
+  border-bottom-color: #4d4d4d;
+}
+
+.thread_header .dropdown:after {
+  border-bottom-color: #333;
+}
+
+.thread_header .dropdown.is_loading:before {
+  background-color: rgba(51, 51, 51, 0.9);
+}
+
+.thread_header .dropdown .dropdown_title {
+  border-color: #4d4d4d;
+  color: #a5c8f1;
+}
+
+.thread_header .dropdown_select:hover {
+  background: #4d4d4d;
+}
+
+.score_detail_icon {
+  background-color: #4d4d4d;
+  color: #333;
+}
+
+.threadvote_chart {
+  background-color: #222;
 }
 
 /*
