@@ -1,5 +1,5 @@
 /**
- * REDFLAGDEALS.COM RESPONSIVE FORUMS - dark mode stylesheet (20.0.0 / February 2017)
+ * REDFLAGDEALS.COM RESPONSIVE FORUMS - dark mode stylesheet (21.0.0 / May 2017)
  */
 /*
 =====
@@ -13,6 +13,10 @@ SITE HEADER
   border-color: #4d4d4d;
 }
 
+#site_headerbar_top {
+  border-color: #4d4d4d;
+}
+
 .site_logo_text,
 .site_logo_tagline {
   -webkit-filter: brightness(1.25);
@@ -20,21 +24,16 @@ SITE HEADER
 }
 
 #site_userbox {
-  background-color: #333;
   border-color: #222;
   color: #aaa;
 }
 
 #site_userbox.is_loading:after {
-  background-color: #333;
+  background-color: #222;
 }
 
 #site_userbox.is_not_logged_in .site_userbox_profile_avatar i {
-  color: #aaa;
-}
-
-#site_userbox.is_active_as_menu {
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  color: #4d4d4d;
 }
 
 #site_userbox a {
@@ -47,13 +46,71 @@ SITE HEADER
   color: #aaa;
 }
 
+#site_userbox input::-webkit-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+#site_userbox input::-moz-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+#site_userbox input:-ms-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+#site_userbox input::placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.site_userbox_dropdown {
+  background-color: #333;
+}
+
+#site_userbox_break {
+  border-color: #4d4d4d;
+}
+
 #site_login_yid input[type="text"]:first-child,
 #site_login_yid input[type="password"]:first-child {
+  background-color: #222;
   border-color: #4d4d4d;
+  color: #aaa;
+}
+
+#site_login_yid input[type="text"]:first-child::-webkit-input-placeholder,
+#site_login_yid input[type="password"]:first-child::-webkit-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+#site_login_yid input[type="text"]:first-child::-moz-placeholder,
+#site_login_yid input[type="password"]:first-child::-moz-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+#site_login_yid input[type="text"]:first-child:-ms-input-placeholder,
+#site_login_yid input[type="password"]:first-child:-ms-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+#site_login_yid input[type="text"]:first-child::placeholder,
+#site_login_yid input[type="password"]:first-child::placeholder {
+  color: #4d4d4d;
+  opacity: 1;
 }
 
 #site_userbox_toggle_large {
   border-color: #222;
+}
+
+#site_userbox_toggle_large:hover {
+  color: #eee;
 }
 
 #site_userbox_toggle_large i {
@@ -94,7 +151,10 @@ SITE HEADER
 }
 
 #site_geolocation_toggle {
-  background-color: #900;
+  color: #aaa;
+}
+
+#site_geolocation_toggle:hover {
   color: #eee;
 }
 
@@ -129,20 +189,16 @@ SITE MAINNAV
 }
 
 #site_mainnav {
-  background-color: #333;
+  background-color: #222;
   border-color: #4d4d4d;
 }
 
 #site_mainnav .mainnav_core_link {
-  border-color: #222;
+  color: #aaa;
 }
 
 #site_mainnav .is_active .mainnav_core_link {
   color: #eee;
-}
-
-#site_mainnav .is_active .mainnav_core_link.has_dropdown :after {
-  border-bottom-color: #eee;
 }
 
 #site_mainnav a:hover {
@@ -153,16 +209,11 @@ SITE MAINNAV
   border-color: #4d4d4d;
 }
 
-.mainnav_section.is_active .mainnav_core_link:before {
-  border-bottom-color: #900;
-}
-
 .mainnav_section.is_active .mainnav_cat_group.is_active > .submenu_row {
   background-color: #900;
 }
 
 .mainnav_section.is_active .submenu_row {
-  background-color: #4d4d4d;
   border-color: #222;
   color: #aaa;
 }
@@ -173,18 +224,43 @@ SITE MAINNAV
   color: #aaa;
 }
 
+.mainnav_section.current_section .mainnav_core_link {
+  color: #900;
+}
+
+.mainnav_section.current_section .mainnav_core_link:hover {
+  color: #900;
+}
+
+#site_mainnav:hover .current_section .mainnav_core_link {
+  color: #900;
+}
+
+.mainnav_cat_group {
+  border-color: #4d4d4d;
+}
+
 .mainnav_core_link.has_dropdown:after {
   border-top-color: #aaa;
 }
 
 .submenu_section {
-  background-color: #4d4d4d;
-  border-top-color: #900;
+  background-color: #333;
+  border-top-color: #4d4d4d;
 }
 
 .mainnav_subcat_head,
 .mainnav_subcat_grid li {
   border-color: #222;
+}
+
+.mainnav_subcat_head,
+.mainnav_subcat_blurb_head {
+  color: #eee;
+}
+
+.mainnav_subcat_list a {
+  color: #aaa;
 }
 
 #submenu_forums .mainnav_subcat_malls,
@@ -198,7 +274,6 @@ SITE MAINNAV
 #submenu_forums .mainnav_subcat_head,
 #submenu_stores .mainnav_subcat_head {
   border-color: #222;
-  color: #aaa;
 }
 
 #submenu_forums .mainnav_subcat_list li,
@@ -222,6 +297,26 @@ SITE MAINNAV
   background-color: #222;
   border-color: #4d4d4d;
   color: #aaa;
+}
+
+#site_search input::-webkit-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+#site_search input::-moz-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+#site_search input:-ms-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+#site_search input::placeholder {
+  color: #4d4d4d;
+  opacity: 1;
 }
 
 .site_search_button {
@@ -250,6 +345,26 @@ SITE MAINNAV
   background-color: #222;
   border-color: #4d4d4d;
   color: #aaa;
+}
+
+#forums_nav_search_keywords::-webkit-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+#forums_nav_search_keywords::-moz-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+#forums_nav_search_keywords:-ms-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+#forums_nav_search_keywords::placeholder {
+  color: #4d4d4d;
+  opacity: 1;
 }
 
 .searchbox_options {
@@ -295,6 +410,54 @@ textarea {
   background-color: #222;
   border-color: #4d4d4d;
   color: #aaa;
+}
+
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="url"]::-webkit-input-placeholder,
+input[type="number"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder,
+input[type="search"]::-webkit-input-placeholder,
+select::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+input[type="text"]::-moz-placeholder,
+input[type="email"]::-moz-placeholder,
+input[type="url"]::-moz-placeholder,
+input[type="number"]::-moz-placeholder,
+input[type="password"]::-moz-placeholder,
+input[type="search"]::-moz-placeholder,
+select::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+input[type="text"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder,
+input[type="url"]:-ms-input-placeholder,
+input[type="number"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder,
+input[type="search"]:-ms-input-placeholder,
+select:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="url"]::placeholder,
+input[type="number"]::placeholder,
+input[type="password"]::placeholder,
+input[type="search"]::placeholder,
+select::placeholder,
+textarea::placeholder {
+  color: #4d4d4d;
+  opacity: 1;
 }
 
 .forums_tabbar {
@@ -404,6 +567,26 @@ SIDEBAR
   background-color: #222;
   border-color: #4d4d4d;
   color: #aaa;
+}
+
+.newsletter_subscribe_form_default input::-webkit-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.newsletter_subscribe_form_default input::-moz-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.newsletter_subscribe_form_default input:-ms-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.newsletter_subscribe_form_default input::placeholder {
+  color: #4d4d4d;
+  opacity: 1;
 }
 
 .section_sidebar .list_item {
@@ -601,13 +784,15 @@ a.topic_title_link {
   color: #1489ec;
 }
 
-.thread_group_header {
+.thread_group_header,
+.thread_list_header {
   background-color: #900;
 }
 
 .thread_item {
   background-color: #333;
   border-color: #222;
+  color: #aaa;
 }
 
 /**
@@ -704,6 +889,34 @@ VIEW FORUM
   background-image: url(data:image/gif;base64,R0lGODlhCwAMAIABAKqqqv///yH5BAEAAAEALAAAAAALAAwAAAIQjI+py+0fgJzz0IruwhuiAgA7);
 }
 
+.display-options select::-webkit-input-placeholder,
+.forum_jump_select::-webkit-input-placeholder,
+.category_id::-webkit-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.display-options select::-moz-placeholder,
+.forum_jump_select::-moz-placeholder,
+.category_id::-moz-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.display-options select:-ms-input-placeholder,
+.forum_jump_select:-ms-input-placeholder,
+.category_id:-ms-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.display-options select::placeholder,
+.forum_jump_select::placeholder,
+.category_id::placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
 .category_filter label {
   background-color: #222;
   border-color: #4d4d4d;
@@ -714,6 +927,26 @@ VIEW FORUM
   background-color: #222;
   border-color: #4d4d4d;
   color: #aaa;
+}
+
+.forum_tools::-webkit-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.forum_tools::-moz-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.forum_tools:-ms-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.forum_tools::placeholder {
+  color: #4d4d4d;
+  opacity: 1;
 }
 
 .forum_tools .dropdown {
@@ -756,6 +989,26 @@ VIEW FORUM
   background-image: url(data:image/gif;base64,R0lGODlhCwAMAIABAKqqqv///yH5BAEAAAEALAAAAAALAAwAAAIQjI+py+0fgJzz0IruwhuiAgA7);
 }
 
+.threadlist_bulk_moderation_select::-webkit-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.threadlist_bulk_moderation_select::-moz-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.threadlist_bulk_moderation_select:-ms-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.threadlist_bulk_moderation_select::placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
 @media only screen and (min-width: 50.063em) {
   .category_filter label {
     color: #aaa;
@@ -766,7 +1019,7 @@ VIEW FORUM
 }
 
 /**
- * REDFLAGDEALS.COM RESPONSIVE FORUMS - dark mode stylesheet (August 2016)
+ * REDFLAGDEALS.COM RESPONSIVE FORUMS - dark mode stylesheet (February 2017)
  */
 /*
 =====
@@ -1227,11 +1480,63 @@ UCP GLOBAL
   color: #aaa;
 }
 
+.ucp_fieldset input[type="text"]::-webkit-input-placeholder,
+.ucp_fieldset input[type="email"]::-webkit-input-placeholder,
+.ucp_fieldset input[type="url"]::-webkit-input-placeholder,
+.ucp_fieldset input[type="password"]::-webkit-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.ucp_fieldset input[type="text"]::-moz-placeholder,
+.ucp_fieldset input[type="email"]::-moz-placeholder,
+.ucp_fieldset input[type="url"]::-moz-placeholder,
+.ucp_fieldset input[type="password"]::-moz-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.ucp_fieldset input[type="text"]:-ms-input-placeholder,
+.ucp_fieldset input[type="email"]:-ms-input-placeholder,
+.ucp_fieldset input[type="url"]:-ms-input-placeholder,
+.ucp_fieldset input[type="password"]:-ms-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.ucp_fieldset input[type="text"]::placeholder,
+.ucp_fieldset input[type="email"]::placeholder,
+.ucp_fieldset input[type="url"]::placeholder,
+.ucp_fieldset input[type="password"]::placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
 .ucp_pm_content .ucp_widget_horizontal select {
   background-color: #222;
   border-color: #4d4d4d;
   color: #aaa;
   background-image: url(data:image/gif;base64,R0lGODlhCwAMAIABAKqqqv///yH5BAEAAAEALAAAAAALAAwAAAIQjI+py+0fgJzz0IruwhuiAgA7);
+}
+
+.ucp_pm_content .ucp_widget_horizontal select::-webkit-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.ucp_pm_content .ucp_widget_horizontal select::-moz-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.ucp_pm_content .ucp_widget_horizontal select:-ms-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.ucp_pm_content .ucp_widget_horizontal select::placeholder {
+  color: #4d4d4d;
+  opacity: 1;
 }
 
 .ucp_button_secondary {
@@ -1283,6 +1588,38 @@ PRIVATE MESSAGES LIST
   border-color: #4d4d4d;
   color: #aaa;
   background-image: url(data:image/gif;base64,R0lGODlhCwAMAIABAKqqqv///yH5BAEAAAEALAAAAAALAAwAAAIQjI+py+0fgJzz0IruwhuiAgA7);
+}
+
+.pm_bulk_action_select::-webkit-input-placeholder,
+#st::-webkit-input-placeholder,
+#sk::-webkit-input-placeholder,
+#sd::-webkit-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.pm_bulk_action_select::-moz-placeholder,
+#st::-moz-placeholder,
+#sk::-moz-placeholder,
+#sd::-moz-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.pm_bulk_action_select:-ms-input-placeholder,
+#st:-ms-input-placeholder,
+#sk:-ms-input-placeholder,
+#sd:-ms-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.pm_bulk_action_select::placeholder,
+#st::placeholder,
+#sk::placeholder,
+#sd::placeholder {
+  color: #4d4d4d;
+  opacity: 1;
 }
 
 .pm_bulk_action_submit,
@@ -1359,6 +1696,26 @@ POSTING PAGES
   background-image: url(data:image/gif;base64,R0lGODlhCwAMAIABAKqqqv///yH5BAEAAAEALAAAAAALAAwAAAIQjI+py+0fgJzz0IruwhuiAgA7);
 }
 
+.post_fields_primary li select::-webkit-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.post_fields_primary li select::-moz-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.post_fields_primary li select:-ms-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.post_fields_primary li select::placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
 .panel[data-tabpanel] {
   background-color: #333;
   border-color: #222;
@@ -1374,6 +1731,26 @@ POSTING PAGES
   border-color: #4d4d4d;
   color: #aaa;
   background-image: url(data:image/gif;base64,R0lGODlhCwAMAIABAKqqqv///yH5BAEAAAEALAAAAAALAAwAAAIQjI+py+0fgJzz0IruwhuiAgA7);
+}
+
+.panel[data-tabpanel] select::-webkit-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.panel[data-tabpanel] select::-moz-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.panel[data-tabpanel] select:-ms-input-placeholder {
+  color: #4d4d4d;
+  opacity: 1;
+}
+
+.panel[data-tabpanel] select::placeholder {
+  color: #4d4d4d;
+  opacity: 1;
 }
 
 hr.dashed {
@@ -1482,6 +1859,24 @@ SUBSCRIPTIONS
   background-image: none;
   border-color: #222;
   color: #eee;
+}
+
+/**
+ * REDFLAGDEALS.COM RESPONSIVE FORUMS - dark mode stylesheet (August 2016)
+ */
+/*
+=====
+THREAD LIST
+=====
+*/
+#user_viewing_history .thread_lastviewed,
+#user_viewing_history .thread_meta_large,
+#user_viewing_history .thread_stats {
+  color: #aaa;
+}
+
+#user_viewing_history .history_header > h1 {
+  border-color: #4d4d4d;
 }
 
 /**
